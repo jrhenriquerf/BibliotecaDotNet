@@ -5,7 +5,20 @@ Repositório da disciplina .NET Avançado - MBA Engenharia de Software - FIB Bau
 ## Estrutura de Entidades
 ![](/imagens/Estrutura.PNG)
 
+## Dependências
+- ![DotNet Core](https://docs.microsoft.com/pt-br/dotnet/core/introduction)
+- ![PostgreSQL](https://www.postgresql.org/)
 
+
+## Como rodar o projeto
+### API
+```
+dotnet run -p .\ProjBiblio\ProjBiblio.WebApi\
+```
+### Site MVC
+```
+dotnet run -p .\SiteBibliotecaMVC\
+```
 ## Alguns comandos
 ### Criar um projeto de api
 ```
