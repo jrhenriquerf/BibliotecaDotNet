@@ -6,8 +6,8 @@ Repositório da disciplina .NET Avançado - MBA Engenharia de Software - FIB Bau
 ![](/imagens/Estrutura.PNG)
 
 ## Dependências
-- ![DotNet Core](https://docs.microsoft.com/pt-br/dotnet/core/introduction)
-- ![PostgreSQL](https://www.postgresql.org/)
+- [DotNet Core](https://docs.microsoft.com/pt-br/dotnet/core/introduction)
+- [PostgreSQL](https://www.postgresql.org/)
 
 
 ## Como rodar o projeto
