@@ -37,6 +37,7 @@ namespace ProjBiblio.WebApi.Controllers
         [HttpPost]
         public ActionResult Post([FromBody] LivroInputModel livro)
         {
+            
             var result = _livroService.Post(livro);
 
             return new CreatedAtRouteResult("GetLivrosDetails", 

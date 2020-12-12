@@ -27,6 +27,8 @@ namespace ProjBiblio.Application.InputModels.Mapping
                            opt => opt.MapFrom(src => src.LivroID))
                 .ForMember(dest => dest.Autores,
                             opt => opt.MapFrom(src => src.LivAutor))
+                .ForMember(dest => dest.CampanhaMarketing,
+                            opt => opt.MapFrom(src => src.LivMarketing))
                 .ReverseMap();
 
             CreateMap<Carrinho, CarrinhoInputModel>()

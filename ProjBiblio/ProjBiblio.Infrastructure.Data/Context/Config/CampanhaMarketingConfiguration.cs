@@ -8,12 +8,15 @@ namespace ProjBiblio.Infrastructure.Data.Context.Config
     {
         public void Configure(EntityTypeBuilder<CampanhaMarketing> builder)
         {
-            // Gera Chave Primaria Composta
+            #region CampanhaMarketing
+
             builder.HasKey(c => c.MarketingID);
 
             builder.Property(t => t.Descricao)
                 .IsRequired()
                 .HasMaxLength(500);
+
+            #endregion
         }
     }
 }

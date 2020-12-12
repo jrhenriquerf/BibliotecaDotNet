@@ -14,7 +14,15 @@ namespace ProjBiblio.Application.InputModels
 
         public string Foto { get; set; }
 
-        public string GeneroId { get; set; }
+        public int Paginas { get; set; }
+
+        public int Edicao { get; set; }
+
+        public int Ano { get; set; }
+
+        public string Editora { get; set; }
+
+        public int GeneroID { get; set; }
 
         public IList<AutorSelectListDto> Autores { get; set; }
 

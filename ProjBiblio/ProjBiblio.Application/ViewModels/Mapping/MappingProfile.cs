@@ -17,11 +17,18 @@ namespace ProjBiblio.Application.ViewModels.Mapping
                            opt => opt.MapFrom(src => src.GeneroID))
                 .ReverseMap();
 
+            CreateMap<CampanhaMarketing, CampanhaMarketingViewModel>()
+                .ForMember(dest => dest.MarketingId, 
+                           opt => opt.MapFrom(src => src.MarketingID))
+                .ReverseMap();
+
             CreateMap<Livro, LivroViewModel>()
                 .ForMember(dest => dest.Id, 
                            opt => opt.MapFrom(src => src.LivroID))
                 .ForMember(dest => dest.Autores,
-                            opt => opt.MapFrom(src => src.LivAutor))   
+                            opt => opt.MapFrom(src => src.LivAutor))
+                .ForMember(dest => dest.CampanhaMarketing,
+                            opt => opt.MapFrom(src => src.LivMarketing))
                 .ReverseMap();
 
             CreateMap<Carrinho, CarrinhoViewModel>()
